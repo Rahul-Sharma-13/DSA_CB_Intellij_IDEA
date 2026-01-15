@@ -12,7 +12,6 @@ public class Pattern13 {
 //        * * *
 //        * *
 //        *
-
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
         int row = 1;
@@ -24,7 +23,7 @@ public class Pattern13 {
                 System.out.print("* ");
                 i++;
             }
-            //Mirror
+            //Mirror (agar koi specific condition true ho to star++ warna star--)
             if(row<n){
                 star++;
             } else {

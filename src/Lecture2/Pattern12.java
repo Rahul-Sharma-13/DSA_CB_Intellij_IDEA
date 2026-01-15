@@ -7,12 +7,10 @@ public class Pattern12 {
 //            * ! * ! *
 //          * ! * ! * ! *
 //        * ! * ! * ! * ! *
-
         int n = 5;
         int star = 1;
         int row = 1;
         int space = n - 1;
-
         while(row<=n){
             //space
             int i = 1;
@@ -20,7 +18,6 @@ public class Pattern12 {
                 System.out.print("  ");
                 i++;
             }
-
             //star
             int j = 1;
             while(j<=star){
@@ -29,10 +26,8 @@ public class Pattern12 {
                 } else {
                     System.out.print("* ");
                 }
-
                 j++;
             }
-
             row++;
             space--;
             star +=2;

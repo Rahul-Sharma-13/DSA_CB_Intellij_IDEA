@@ -21,6 +21,7 @@ public class PascalTriangle {
 
             row++;
             star++;
+            //sequence series, log,
             System.out.println();
         }
 

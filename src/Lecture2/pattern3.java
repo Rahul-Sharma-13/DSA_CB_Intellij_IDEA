@@ -1,7 +1,14 @@
 package Lecture2;
 
-public class patter3 {
+public class pattern3 {
     public static void main(String[] args) {
+
+//         * * * * *
+//         * * * *
+//         * * *
+//         * *
+//         *
+
         int n = 5;
         int row = 1;
         int star = 5;

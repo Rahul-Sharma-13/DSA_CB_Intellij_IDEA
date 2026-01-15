@@ -1,6 +1,6 @@
 package Lecture2;
 
-public class patter5 {
+public class pattern5 {
     public static void main(String[] args) {
 //        * * * * *
 //          * * * *

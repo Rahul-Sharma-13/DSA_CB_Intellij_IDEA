@@ -2,6 +2,12 @@ package Lecture2;
 
 public class pattern4 {
     public static void main(String[] args) {
+
+//                *
+//              * *
+//            * * *
+//          * * * *
+//        * * * * *
         int n = 5;
         int row = 1;
         int space = n-1;
@@ -20,7 +26,6 @@ public class pattern4 {
                 System.out.print("* ");
                 j++;
             }
-
             System.out.println();
             space--;
             row++;

@@ -1,55 +1,53 @@
 package Assignments1;
 import java.util.Scanner;
 
-public class HollowDiamondPattern {
+public class MagicPattern {
     public static void main(String[] args) {
-//                    n = 5
-//                * * * * *
-//                * *   * *
-//                *       *
-//                * *   * *
-//                * * * * *
+//        n = 5
+//        *********
+//        **** ****
+//        ***   ***
+//        **     **
+//        *       *
+//        **     **
+//        ***   ***
+//        **** ****
+//        *********
 
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        int row = 1;
-        int star = n/2+1;
+        int star = n;
         int space =-1;
-
-        while(row<=n){
+        int row = 1;
+        while(row <= 2*n-1){
             //star
             int i = 1;
-            if(row == 1 || row == n){
-                i = 2;
+            if(row == 1||row == 2*n-1){
+                i=2;
             }
             while(i<=star){
-                System.out.print("*\t");
+                System.out.print("* ");
                 i++;
             }
-
-
             //space
             int j = 1;
             while(j<=space){
-                System.out.print("\t");
+                System.out.print("  ");
                 j++;
             }
-
             i = 1;
             while(i<=star){
-                System.out.print("*\t");
+                System.out.print("* ");
                 i++;
             }
-
-            if(row<n/2+1){
+            //updation
+            if(row < n){
                 star--;
-                space += 2;
-            }
-            else{
+                space+=2;
+            }else{
                 star++;
-                space -= 2;
+                space-=2;
             }
-
             row++;
             System.out.println();
         }
