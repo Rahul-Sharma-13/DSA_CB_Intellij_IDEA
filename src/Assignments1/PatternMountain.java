@@ -13,6 +13,40 @@ public class PatternMountain {
         int n = input.nextInt();
         int row = 1;
         int star = 1;
-        int space = 
+        int space = 2*n-3;
+        while(row <=n){
+            //star
+            int i = 1;
+            int val = 1;
+            while(i<=star){
+                System.out.print(val+ " ");
+                i++;
+                val++;
+            }
+            //space
+            int j = 1;
+            while(j<=space){
+                System.out.print("  ");
+                j++;
+            }
+            //star
+            i = 1;
+            val--;
+            if(row == n){
+                i = 2;
+                val--;
+            }
+
+            while(i<=star){
+                System.out.print(val + " ");
+                i++;
+                val--;
+            }
+
+            row++;
+            star++;
+            space-=2;
+            System.out.println();
+        }
     }
 }
