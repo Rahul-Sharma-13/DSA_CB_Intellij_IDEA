@@ -3,14 +3,23 @@ package Lecture7;
 public class PivotIndex2 {
     public static void main(String[] args) {
         int[] arr = {1, 7, 3, 6, 5, 6};
-        System.out.println(Pivot_Index(arr));
+        System.out.println(Pivot_Index1(arr));
     }
-//    public static int Pivot_Index1(int[] arr){
-//        int totalSum = 0;
-//        for(int i = 0; i< arr.length; i++){
-//            totalSum +=arr[i];
-//        }
-//    }
+    public static int Pivot_Index1(int[] arr){
+        int totalSum = 0;
+        for(int i = 0; i< arr.length; i++){
+            totalSum +=arr[i];
+        }
+        int left = 0;
+        for(int i = 0; i<arr.length; i++){
+            int right = totalSum-left-arr[i];
+            if(left==right){
+                return i;
+            }
+            left += arr[i];
+        }
+        return -1;
+    }
     public static int Pivot_Index(int[] arr){
         int n = arr.length;
         int[] left = new int[n];
