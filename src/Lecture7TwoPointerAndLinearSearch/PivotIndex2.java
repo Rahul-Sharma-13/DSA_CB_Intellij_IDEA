@@ -1,4 +1,4 @@
-package Lecture7;
+package Lecture7TwoPointerAndLinearSearch;
 
 public class PivotIndex2 {
     public static void main(String[] args) {

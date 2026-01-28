@@ -12,6 +12,8 @@ public class RotateArray {
     }
     public static void Rotate(int[] arr, int k){
         int n = arr.length;
+        //k = k%n isliye liya h taaki agr by chance k ki value n se badi aati hai to use scale down kar sake
+        //kyunki after n number of rotations array dobara se wahi array ban jaega jo wo n rotations ke pehle tha
         k = k%n;
         for(int j = 0; j<k; j++){
             int item = arr[n-1];

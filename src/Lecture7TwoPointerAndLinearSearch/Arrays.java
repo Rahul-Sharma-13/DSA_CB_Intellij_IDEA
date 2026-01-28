@@ -1,5 +1,4 @@
-package Lecture7;
-import java.util.Scanner;
+package Lecture7TwoPointerAndLinearSearch;
 
 public class Arrays {
     public static void main(String[] args) {

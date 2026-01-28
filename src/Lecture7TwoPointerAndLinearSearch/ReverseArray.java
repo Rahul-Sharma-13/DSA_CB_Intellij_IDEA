@@ -1,4 +1,4 @@
-package Lecture7;
+package Lecture7TwoPointerAndLinearSearch;
 //Two Pointer
 
 public class ReverseArray {

@@ -1,5 +1,4 @@
-package Lecture7;
-import java.util.Scanner;
+package Lecture7TwoPointerAndLinearSearch;
 //OS, SQL, DBMS
 
 public class ArraysSwap1 {

@@ -1,4 +1,4 @@
-package Lecture7;
+package Lecture7TwoPointerAndLinearSearch;
 
 //prefix and suffix
 

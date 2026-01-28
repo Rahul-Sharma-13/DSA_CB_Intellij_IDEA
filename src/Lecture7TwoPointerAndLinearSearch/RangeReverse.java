@@ -1,4 +1,4 @@
-package Lecture7;
+package Lecture7TwoPointerAndLinearSearch;
 
 public class RangeReverse {
     public static void main(String[] args) {

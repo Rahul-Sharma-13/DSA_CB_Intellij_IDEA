@@ -13,7 +13,7 @@ public class Odd_and_Even_back_in_Delhi {
                 System.out.println("No");
             } else if(checkNum(num)){
                 System.out.println("Yes");
-            } else{
+            } else {
                 System.out.println("No");
             }
             n--;
