@@ -9,33 +9,33 @@ public class Odd_and_Even_back_in_Delhi {
         int n = input.nextInt();
         while(n>0){
             int num = input.nextInt();
-            if(num == 0){
-                System.out.println("No");
-            } else if(checkNum(num)){
-                System.out.println("Yes");
-            } else {
-                System.out.println("No");
-            }
+findSum(num);
+
             n--;
         }
 //        System.out.println(checkNum(n));
     }
-    public static boolean checkNum(int num){
-        int sum = findSum(num);
-        if(sum%2 == 0){
-            return sum % 4 == 0;
-        }
-        else{
-            return sum%3 == 0;
-        }
+    public static void checkNum(int num1,int num2){
+     if(num1%4==0 || num2%3==0){
+         System.out.println("Yes");
+
+     }
+     else{
+         System.out.println("No");
+     }
     }
-    public static int findSum(int num){
-        int sum = 0;
+    public static void findSum(int num){
+        int sum1 = 0;
+        int sum2=0;
         while(num>0){
             int rem = num%10;
-            sum = sum+rem;
+            if(rem%2==0)
+            sum1 = sum1+rem;
+            else
+                sum2+=rem;
             num = num/10;
         }
-        return sum;
+         checkNum(sum1,sum2);
+
     }
 }
