@@ -9,20 +9,20 @@ public class Odd_and_Even_back_in_Delhi {
         int n = input.nextInt();
         while(n>0){
             int num = input.nextInt();
-findSum(num);
+            findSum(num);
 
             n--;
         }
 //        System.out.println(checkNum(n));
     }
     public static void checkNum(int num1,int num2){
-     if(num1%4==0 || num2%3==0){
-         System.out.println("Yes");
+         if(num1%4==0 || num2%3==0){
+             System.out.println("Yes");
 
-     }
-     else{
-         System.out.println("No");
-     }
+         }
+         else{
+             System.out.println("No");
+         }
     }
     public static void findSum(int num){
         int sum1 = 0;
@@ -35,7 +35,7 @@ findSum(num);
                 sum2+=rem;
             num = num/10;
         }
-         checkNum(sum1,sum2);
+        checkNum(sum1,sum2);
 
     }
 }

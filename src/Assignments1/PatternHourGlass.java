@@ -48,7 +48,8 @@ public class PatternHourGlass {
                 star-=2;
                 space++;
                 val--;
-            }else{
+            }
+            else{
                 space--;
                 star+=2;
                 val++;
