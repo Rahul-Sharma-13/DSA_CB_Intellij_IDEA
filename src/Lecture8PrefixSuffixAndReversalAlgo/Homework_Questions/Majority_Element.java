@@ -4,7 +4,7 @@ package Lecture8PrefixSuffixAndReversalAlgo.Homework_Questions;
 public class Majority_Element {
     public static void main(String[] args) {
 //        MooreVoting
-        int[] arr = {2,2,1,1,1,2,2};
+        int[] arr = {1,1,1,2,2};
         System.out.println(mooreVoting(arr));
     }
     public static int mooreVoting(int[] arr){
