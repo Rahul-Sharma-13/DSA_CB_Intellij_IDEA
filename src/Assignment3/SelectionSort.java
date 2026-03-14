@@ -1,17 +1,18 @@
 package Assignment3;
+
 import java.util.Scanner;
 
-public class ProductOfArrayExceptSelf {
+public class SelectionSort {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
         int[] arr = new int[n];
-        for(int i = 0; i<arr.length; i++){
+        for (int i = 0; i < n; i++) {
             arr[i] = input.nextInt();
         }
-        product(arr);
+        Sort(arr);
     }
-    public static void product(int[] arr){
-        
+    public static void Sort(int[] arr){
+
     }
 }

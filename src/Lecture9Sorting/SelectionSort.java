@@ -2,24 +2,26 @@ package Lecture9Sorting;
 
 public class SelectionSort {
     public static void main(String[] args) {
-        int [] arr = {4, -1, 5, 3, 2, 1, 7};
+        int[] arr = {4, -1, 5, 3, 2, 1, 7};
 //        System.out.println(min_form_ith_index(arr, 2));
         Sort(arr);
         for (int j : arr) {
             System.out.print(j + " ");
         }
     }
-    public static int min_form_ith_index(int[] arr, int idx){
+
+    public static int min_form_ith_index(int[] arr, int idx) {
         int mini = idx;
-        for (int i = idx; i<arr.length; i++){
-            if(arr[mini]>arr[i]){
+        for (int i = idx; i < arr.length; i++) {
+            if (arr[mini] > arr[i]) {
                 mini = i;
             }
         }
         return mini;
     }
-    public static void Sort(int[] arr){
-        for(int i = 0; i<arr.length; i++){
+
+    public static void Sort(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
             int mini = min_form_ith_index(arr, i);
             int temp = arr[i];
             arr[i] = arr[mini];
