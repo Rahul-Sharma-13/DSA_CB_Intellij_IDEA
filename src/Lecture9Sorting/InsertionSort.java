@@ -2,25 +2,25 @@ package Lecture9Sorting;
 
 public class InsertionSort {
     public static void main(String[] args) {
-        int [] arr = {9, 1, 7, 4, 8, 2, 11};
+        int[] arr = {9, 1, 7, 4, 8, 2, 11};
 //        InsertLastElement(arr, arr.length - 1);
         Sort(arr);
-        for(int i = 0; i<arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
     }
 
-    public static void Sort(int[] arr){
-        for(int i = 1; i<arr.length; i++){
+    public static void Sort(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
             InsertLastElement(arr, i);
         }
     }
 
-    public static void InsertLastElement(int [] arr, int i ){
+    public static void InsertLastElement(int[] arr, int i) {
         int item = arr[i];
-        int j = i -1;
-        while(j>=0 && arr[j] >item){
-            arr[j+1] = arr[j];
+        int j = i - 1;
+        while (j >= 0 && arr[j] > item) {
+            arr[j + 1] = arr[j];
             arr[j] = item;
             j--;
         }

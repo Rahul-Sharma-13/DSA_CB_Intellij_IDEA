@@ -6,7 +6,7 @@ public class FrequencyArray {
         int [] freq = new int[26];
         for(int i = 0; i<s.length(); i++){
             char ch = s.charAt(i);
-            freq[ch - 'a']++;
+            System.out.println(ch-'a');
         }
     }
 }

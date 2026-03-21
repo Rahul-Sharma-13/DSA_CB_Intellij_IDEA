@@ -2,7 +2,7 @@ package Assignment3;
 
 import java.util.Scanner;
 
-public class SelectionSort {
+public class IncompleteSelectionSort {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
