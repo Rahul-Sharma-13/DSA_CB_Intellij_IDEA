@@ -1,14 +1,16 @@
 package Lecture8PrefixSuffixAndReversalAlgo.Homework_Questions;
+
 import java.util.Scanner;
 //  https://leetcode.com/problems/container-with-most-water/description/
 
 public class Container_With_Most_Water {
     public static void main(String[] args) {
-        int [] arr = {3,6,1};
+        int[] arr = {3, 6, 1};
         int area = findWater(arr);
         System.out.println(area);
     }
-    public static int findWater(int[] arr){
+
+    public static int findWater(int[] arr) {
         //totally wrong approach
 //        int totalSum = 0;
 //        int n = arr.length;
@@ -45,15 +47,15 @@ public class Container_With_Most_Water {
         int start = 0;
         int end = n - 1;
         int area = Integer.MIN_VALUE;
-        while(end>start){
+        while (end > start) {
             int temp = (Integer.min(arr[start], arr[end])) * (end - start);
-            if(temp>area){
+            if (temp > area) {
                 area = temp;
             }
 
-            if(arr[start] > arr[end]){
+            if (arr[start] > arr[end]) {
                 end--;
-            }else{
+            } else {
                 start++;
             }
         }

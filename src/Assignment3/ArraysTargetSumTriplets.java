@@ -3,7 +3,7 @@ package Assignment3;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class IncompleteArraysTargetSumTriplets {
+public class ArraysTargetSumTriplets {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();

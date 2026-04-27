@@ -1,8 +1,24 @@
 package Assignment3Discussion;
 
+import java.util.Scanner;
+
 public class GetTheMaximumScore {
     public static void main(String[] args) {
-
+        Scanner input = new Scanner(System.in);
+        int t = input.nextInt();
+        while(t-->0){
+            int n = input.nextInt();
+            int m = input.nextInt();
+            int[] arr1= new int[n];
+            int[] arr2 = new int[m];
+            for (int i = 0; i < n; i++) {
+                arr1[i] = input.nextInt();
+            }
+            for (int i = 0; i < m; i++) {
+                arr2[i] = input.nextInt();
+            }
+            System.out.println(MaximumScore(arr1, arr2));
+        }
     }
     public static int MaximumScore(int[] arr1, int[] arr2){
         int mod = 1000_000_007;

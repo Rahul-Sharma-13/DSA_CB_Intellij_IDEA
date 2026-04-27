@@ -3,7 +3,7 @@ package Assignment3;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class IncompletePairofRoses {
+public class PairofRoses {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int t = input.nextInt();

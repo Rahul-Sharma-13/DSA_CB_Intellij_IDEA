@@ -1,7 +1,7 @@
 package Assignment3;
 import java.util.Scanner;
 
-public class IncompleteProductOfArrayExceptSelf {
+public class ProductOfArrayExceptSelf {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
@@ -11,7 +11,7 @@ public class IncompleteProductOfArrayExceptSelf {
         }
         long[] ans = product(arr);
         for (int i = 0; i < ans.length; i++) {
-            System.out.print(ans[i]);
+            System.out.print(ans[i]+" ");
         }
 
     }
