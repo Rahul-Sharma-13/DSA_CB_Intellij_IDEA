@@ -1,5 +1,6 @@
 package Assignment3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class IncompletePairofRoses {
@@ -21,11 +22,10 @@ public class IncompletePairofRoses {
     public static void FindPair(int[] arr, int target){
         int a = 0;
         int b = 0;
-        int diff = Integer.MAX_VALUE;
-        for (int i = 0; i<arr.length-1; i++){
-            for (int j = 1; j<arr.length; j++){
-
-                if(arr[i]+arr[j] <= target){
+        Arrays.sort(arr);
+        for (int i = 0; i<arr.length; i++){
+            for (int j = i+1; j<arr.length; j++){
+                if(arr[i] + arr[j] == target){
                     a = arr[i];
                     b = arr[j];
                 }
