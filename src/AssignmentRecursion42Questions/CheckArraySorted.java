@@ -1,6 +1,6 @@
 package AssignmentRecursion42Questions;
 
-public class CheckArraySortedDryRun {
+public class CheckArraySorted {
     public static void main(String[] args) {
         int [] arr = {1, 3, 5, 8, 9};
         int i = 0;

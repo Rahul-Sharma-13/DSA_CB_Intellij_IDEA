@@ -1,6 +1,6 @@
 package AssignmentRecursion42Questions;
 
-public class CheckPalindromeDryRun {
+public class CheckPalindrome {
     public static void main(String[] args) {
         int n = 121;
         int count = 0;

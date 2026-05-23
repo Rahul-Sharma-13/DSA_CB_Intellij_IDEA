@@ -1,6 +1,6 @@
 package AssignmentRecursion42Questions;
 
-public class CheckPrimeDryRun {
+public class CheckPrime {
     public static void main(String[] args) {
         int n = 7;
         int i = 2;
