@@ -18,6 +18,6 @@ public class CoinToss2 {
             Toss(n - 1, ans + "H");
         }
         Toss(n - 1, ans + "T");
-        ans.endsWith("h");
+//        ans.endsWith("h");
     }
 }

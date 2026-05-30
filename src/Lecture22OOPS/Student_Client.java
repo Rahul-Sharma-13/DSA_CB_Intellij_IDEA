@@ -4,7 +4,7 @@ public class Student_Client {
     public static void main(String[] args) {
         System.out.println("hey");
         Student s = new Student();//instance = object
-//        s is refrence variable new Student is object
+//        s is refrence variable new Example is object
         s.age = 19;
         s.name = "Kaju";
         Student s1 = new Student();
