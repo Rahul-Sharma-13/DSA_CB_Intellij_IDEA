@@ -1,4 +1,4 @@
-package Lecture38Graph;
+package Lecture38GraphBipartite;
 
 import java.util.*;
 import java.util.LinkedList;

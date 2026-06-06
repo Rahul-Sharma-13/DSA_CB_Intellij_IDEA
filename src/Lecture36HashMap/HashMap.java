@@ -37,10 +37,8 @@ public class HashMap <K, V>{
                 return;
             }
             temp = temp.next;
-//            temp me maan lo 1k hai from the ll.get(idx) to temp ko null kyun kr diya
         }
         temp = ll.get(idx);
-//        or jb null kr hi diya to yahan pe dobara 1k assign krne ka kya mtlb?
         Node nn = new Node(key, value);
         size++;
         nn.next = temp;

@@ -1,4 +1,4 @@
-package Lecture37GraphBFSandDFS;
+package Lecture37Graph;
 
 import java.util.*;
 
@@ -55,6 +55,7 @@ public class Graph {
                 }
             }
         }
+        visited.add(src);
         return false;
     }
     public void PrintAllPath(int src, int des, HashSet<Integer> visited, String str){

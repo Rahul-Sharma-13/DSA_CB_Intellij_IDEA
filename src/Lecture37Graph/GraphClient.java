@@ -1,4 +1,4 @@
-package Lecture37GraphBFSandDFS;
+package Lecture37Graph;
 
 import java.util.HashSet;
 
