@@ -2,7 +2,7 @@ package Assignment5;
 
 import java.util.Scanner;
 
-public class IncompleteCountRemoveAndReplaceHI {
+public class CountRemoveAndReplaceHI {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String str = input.next();
@@ -16,7 +16,7 @@ public class IncompleteCountRemoveAndReplaceHI {
             return count;
         }
         char ch = str.charAt(0);
-        if(ch == 'h' && str.charAt(1) == 'i'){
+        if(str.length()>=2&& ch == 'h' && str.charAt(1) == 'i'){
             return countHI(str.substring(2), count+1);
         }else {
             return countHI(str.substring(1), count);
@@ -28,7 +28,7 @@ public class IncompleteCountRemoveAndReplaceHI {
             return ;
         }
         char ch = str.charAt(0);
-        if(ch == 'h' && str.charAt(1) == 'i'){
+        if(str.length()>=2&& ch == 'h' && str.charAt(1) == 'i'){
             removeHi(str.substring(2), ans);
         }else {
             removeHi(str.substring(1), ans + ch);
@@ -40,7 +40,7 @@ public class IncompleteCountRemoveAndReplaceHI {
             return ;
         }
         char ch = str.charAt(0);
-        if(ch == 'h' && str.charAt(1) == 'i'){
+        if(str.length()>=2&& ch == 'h' && str.charAt(1) == 'i'){
             replaceHi(str.substring(2), ans+"bye");
         }else {
             replaceHi(str.substring(1), ans + ch);
