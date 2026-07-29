@@ -16,4 +16,31 @@ public class Maximum_Subarray {
         }
         return ans;
     }
+//
+//    public int maxSubarraySumCircular(int[] nums) {
+//        int linearSum = SubArraySum(nums);
+//        int totalSum = 0;
+//        for(int i = 0; i<nums.length; i++){
+//            totalSum += nums[i];
+//            nums[i] *= -1;
+//        }
+//        int midSum = SubArraySum(nums);
+//        int sum = totalSum + midSum;
+//        if(sum == 0){
+//            return linearSum;
+//        }
+//        return Math.max(sum, linearSum);
+//    }
+//    public int SubArraySum(int[] arr){
+//        int curr = 0;
+//        int ans = Integer.MIN_VALUE;
+//        for(int i = 0; i<arr.length; i++){
+//            curr+= arr[i];
+//            ans = Math.max(ans, curr);
+//            if(curr<0){
+//                curr = 0;
+//            }
+//        }
+//        return ans;
+//    }
 }
